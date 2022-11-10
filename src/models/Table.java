@@ -1,3 +1,5 @@
+package models;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +15,7 @@ public class Table implements Element {
 
     @Override
     public void print() {
-        System.out.println("Table with Title: " + numeleTabelei);
+        System.out.println("models.Table with Title: " + numeleTabelei);
     }
 
     @Override

@@ -1,3 +1,7 @@
+import models.Book;
+import models.ImageProxy;
+import models.Section;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {

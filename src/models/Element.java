@@ -1,3 +1,5 @@
+package models;
+
 @SuppressWarnings("unused")
 public interface Element {
     void print();

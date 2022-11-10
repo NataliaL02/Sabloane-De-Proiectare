@@ -1,3 +1,5 @@
+package models;
+
 public class ImageProxy implements Element, Picture{
     private final String imagineaProxy;
     private int dimensiune;

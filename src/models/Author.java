@@ -1,3 +1,5 @@
+package models;
+
 @SuppressWarnings("ClassCanBeRecord")
 public class Author {
     private final String numeleAutorului;
@@ -7,6 +9,6 @@ public class Author {
     }
 
     public void print() {
-        System.out.println("Author: " + numeleAutorului);
+        System.out.println("models.Author: " + numeleAutorului);
     }
 }

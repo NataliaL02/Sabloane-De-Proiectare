@@ -1,3 +1,5 @@
+package models;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +41,7 @@ public class Paragraph implements Element {
                 System.out.print("#");
             }
         }
-        System.out.println("Paragraph: " + paragraphName);
+        System.out.println("models.Paragraph: " + paragraphName);
     }
 
     public void setAlignStrategy(AlignStrategy alignStrategy) {
