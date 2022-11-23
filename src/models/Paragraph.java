@@ -1,5 +1,10 @@
 package models;
 
+import services.AlignCenter;
+import services.AlignLeft;
+import services.AlignRight;
+import services.AlignStrategy;
+
 import java.util.ArrayList;
 import java.util.List;
 
