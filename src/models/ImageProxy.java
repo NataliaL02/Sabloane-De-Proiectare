@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class ImageProxy implements Element, Picture {
     private final String url;
-    private int dimensiune;
+    private int dim;
     private Image imagine;
 
     public ImageProxy(String url) {
@@ -45,7 +45,7 @@ public class ImageProxy implements Element, Picture {
 
     @Override
     public Dimension dim() {
-        return new Dimension(dimensiune, dimensiune);
+        return new Dimension(dim, dim);
     }
 
     @Override
