@@ -1,21 +1,23 @@
 package models;
 
-public class ImageProxy implements Element, Picture{
-    private final String imagineaProxy;
+import java.awt.*;
+
+public class ImageProxy implements Element, Picture {
+    private final String url;
     private int dimensiune;
     private Image imagine;
 
-    public ImageProxy(String imagineaProxy) {
-        this.imagineaProxy = imagineaProxy;
+    public ImageProxy(String url) {
+        this.url = url;
     }
 
-    public Image loadImage()
-    {
-        if(imagine==null){
-            imagine=new Image(imagineaProxy);
+    public Image loadImage() {
+        if (imagine == null) {
+            imagine = new Image(url);
         }
         return imagine;
     }
+
     @Override
     public void print() {
         loadImage().print();
@@ -33,6 +35,21 @@ public class ImageProxy implements Element, Picture{
 
     @Override
     public Element get(int indexulElementului) {
+        return null;
+    }
+
+    @Override
+    public String url() {
+        return url;
+    }
+
+    @Override
+    public Dimension dim() {
+        return new Dimension(dimensiune, dimensiune);
+    }
+
+    @Override
+    public PictureContent content() {
         return null;
     }
 }
