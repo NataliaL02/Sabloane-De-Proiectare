@@ -15,7 +15,7 @@ public class Table implements Element {
 
     @Override
     public void print() {
-        System.out.println("models.Table with Title: " + numeleTabelei);
+        System.out.println("Table with Title: " + numeleTabelei);
     }
 
     @Override

@@ -46,7 +46,7 @@ public class Paragraph implements Element {
                 System.out.print("#");
             }
         }
-        System.out.println("models.Paragraph: " + paragraphName);
+        System.out.println("Paragraph: " + paragraphName);
     }
 
     public void setAlignStrategy(AlignStrategy alignStrategy) {

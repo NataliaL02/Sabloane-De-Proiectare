@@ -20,7 +20,7 @@ public class Image implements Element {
     }
     @Override
     public void print() {
-        System.out.println("models.Image with name: " + imagineaCapitolului);
+        System.out.println("Image with name: " + imagineaCapitolului);
     }
 
     @Override

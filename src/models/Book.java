@@ -4,14 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
-public class Book {
-    private final String titluCartii;
+public class Book extends Section {
     private final List<String> elementeleListei;
     private final List<Element> listaElemente;
     private final List<Author> listaAutori;
 
     public Book(String titlulCartii) {
-        this.titluCartii = titlulCartii;
+        super(titlulCartii);
         this.elementeleListei = new ArrayList<>();
         this.listaElemente = new ArrayList<>();
         this.listaAutori = new ArrayList<>();
@@ -27,7 +26,7 @@ public class Book {
     }
 
     public void print() {
-        System.out.println("models.Book: " + titluCartii + "\n");
+        System.out.println("Book: " + numeleSectiunii + "\n");
         System.out.println("Authors: ");
         for (Author author : listaAutori) {
             author.print();

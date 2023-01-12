@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Section implements Element {
-    private final String numeleSectiunii;
+    protected final String numeleSectiunii;
     private final List<Element> listaSectiuni;
+
     public Section(String numeleSectiunii) {
-        this.numeleSectiunii=numeleSectiunii;
-        this.listaSectiuni=new ArrayList<>();
+        this.numeleSectiunii = numeleSectiunii;
+        this.listaSectiuni = new ArrayList<>();
     }
 
     @Override

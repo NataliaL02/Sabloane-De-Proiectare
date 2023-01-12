@@ -9,6 +9,6 @@ public class Author {
     }
 
     public void print() {
-        System.out.println("models.Author: " + numeleAutorului);
+        System.out.println("Author: " + numeleAutorului);
     }
 }
