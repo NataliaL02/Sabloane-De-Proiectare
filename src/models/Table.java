@@ -1,5 +1,7 @@
 package models;
 
+import visitor.Visitator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,5 +34,10 @@ public class Table implements Element {
     @Override
     public Element get(int indexulElementului) {
         return listaTabele.get(indexulElementului);
+    }
+
+    @Override
+    public void accept(Visitator visitor) {
+        visitor.visitTable(this);
     }
 }

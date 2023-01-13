@@ -4,6 +4,7 @@ import services.AlignCenter;
 import services.AlignLeft;
 import services.AlignRight;
 import services.AlignStrategy;
+import visitor.Visitator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,5 +49,13 @@ public class Paragraph implements Element {
 
     public String getParagraphName() {
         return paragraphName;
+    }
+
+    @Override
+    public void accept(Visitator visitor) {
+        visitor.visitParagrapf(this);
+        for (Element element : listOfElements) {
+            element.accept(visitor);
+        }
     }
 }

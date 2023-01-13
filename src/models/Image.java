@@ -1,5 +1,7 @@
 package models;
 
+import visitor.Visitator;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,5 +55,10 @@ public class Image implements Element, Picture {
     @Override
     public PictureContent content() {
         return null;
+    }
+
+    @Override
+    public void accept(Visitator visitor) {
+        visitor.visitImage(this);
     }
 }

@@ -1,5 +1,7 @@
 package models;
 
+import visitor.Visitator;
+
 @SuppressWarnings("unused")
 public class TableOfContents implements Element {
     @Override
@@ -20,5 +22,10 @@ public class TableOfContents implements Element {
     @Override
     public Element get(int indexulElementului) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitator visitor) {
+        visitor.visitTableOfContents(this);
     }
 }

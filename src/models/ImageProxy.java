@@ -1,5 +1,7 @@
 package models;
 
+import visitor.Visitator;
+
 import java.awt.*;
 
 public class ImageProxy implements Element, Picture {
@@ -51,5 +53,10 @@ public class ImageProxy implements Element, Picture {
     @Override
     public PictureContent content() {
         return null;
+    }
+
+    @Override
+    public void accept(Visitator visitor) {
+        visitor.visitImageProxy(this);
     }
 }

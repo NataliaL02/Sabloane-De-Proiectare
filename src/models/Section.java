@@ -1,5 +1,7 @@
 package models;
 
+import visitor.Visitator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,5 +37,13 @@ public class Section implements Element {
     @Override
     public Element get(int indexulElementului) {
         return listaSectiuni.get(indexulElementului);
+    }
+
+    @Override
+    public void accept(Visitator visitor) {
+        visitor.visitSection(this);
+        for (Element element : listaSectiuni) {
+            element.accept(visitor);
+        }
     }
 }
