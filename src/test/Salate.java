@@ -2,7 +2,7 @@ package test;
 
 @SuppressWarnings("unused")
 public class Salate extends Produs {
-    public Salata(String nume, double pret) {
+    public Salate(String nume, double pret) {
         super(nume, pret);
     }
 
